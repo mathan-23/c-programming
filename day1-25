@@ -1,0 +1,19 @@
+Mark Calculation
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    char ch[50];
+    int s1,s2,s3,s4,s5;\
+    scanf("%s",ch);
+    scanf("%d %d %d %d %d",&s1,&s2,&s3,&s4,&s5);
+    int t=s1+s2+s3+s4+s5;
+    float p=t/5.0;
+    printf("Name of the Student:%s\n",ch);
+    printf("Total marks:%d\n",t);
+    printf("Average marks:%.1f",p);
+
+}
