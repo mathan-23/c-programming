@@ -1,0 +1,25 @@
+Cricket stadium
+  #include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b,L,B,EL,EQ;
+    scanf("%d %d",&a,&b);
+    L=a;
+    B=b;
+    EL=(L+B)*2;
+    EQ=L*B;
+    printf("%d\n",EL);
+    printf("%d\n",EQ);
+    
+    
+    
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
