@@ -1,0 +1,23 @@
+Math Functions
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    float a;
+    int  c,s,p;
+  scanf("%f",&a);
+    scanf("%d",&c);
+     scanf("%d",&s);
+     scanf("%d",&p);
+    printf("%d\n",(int)floor (a));
+      printf("%d\n",(int)ceil (a));
+      printf("%d\n",(int)sqrt (c));
+      printf("%d",(int)pow (s,p));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
