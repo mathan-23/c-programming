@@ -1,0 +1,21 @@
+Wind chill factor
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main()
+{
+    int t,v;
+    float w;
+    scanf("%d %d",&t,&v);
+    w= 35.74 + (0.6215*t)+ ((0.4275*t)-35.75)*pow(v,0.16);
+    printf("%.02f",w);
+    
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
