@@ -1,0 +1,18 @@
+Type Casting
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ int a;
+    char B;
+    scanf("%d\n",&a);
+    scanf("%c\n",&B);
+    printf("Integer of %d is %c\n",a,a);
+    printf("Character of %c is %d\n",B,B);
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
