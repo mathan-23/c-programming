@@ -1,0 +1,24 @@
+Automorphic number
+#include <stdio.h>
+
+int main() {
+    int num, square;
+
+    scanf("%d", &num);
+
+    
+    if (num < 1 || num > 9) {
+        printf("Invalid Input\n");
+    } else {
+        square = num * num;
+
+
+        if (square % 10 == num) {
+            printf("Automorphic Number\n");
+        } else {
+            printf("Not Automorphic Number\n");
+        }
+    }
+
+    return 0;
+}
