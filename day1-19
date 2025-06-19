@@ -1,0 +1,18 @@
+FENCING THE GROUND
+  #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int l,b;
+    scanf("%d %d",&l,&b);
+    float a= (float)(l+b)*2;
+    float c= (float)(l*b);
+    printf("Required length is %.2fm\n",a);
+    printf("Required quantity of carpet is %.2fsqm",c);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
