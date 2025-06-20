@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Comparison functions for qsort
+int asc(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+int desc(const void *a, const void *b) {
+    return (*(int*)b - *(int*)a);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    if (n == 0) {
+        printf("0\n");
+        return 0;
+    }
+
+    int v1[n], v2[n];
+
+    for (int i = 0; i < n; i++)
+        scanf("%d", &v1[i]);
+
+    for (int i = 0; i < n; i++)
+        scanf("%d", &v2[i]);
+
+    qsort(v1, n, sizeof(int), asc);
+    qsort(v2, n, sizeof(int), desc);
+
+    long long scalar_product = 0;
+    for (int i = 0; i < n; i++)
+        scalar_product += (long long)v1[i] * v2[i];
+
+    printf("%lld\n", scalar_product);
+    return 0;
+}
