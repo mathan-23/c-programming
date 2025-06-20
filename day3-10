@@ -2,7 +2,6 @@ Second Array Max And Min
 #include <stdio.h>
 #include <stdlib.h>
 
-// Comparison function for qsort in ascending order
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
@@ -14,7 +13,6 @@ int main() {
     int arr[n], even[n], odd[n];
     int evenCount = 0, oddCount = 0;
 
-    // Input array elements and split into even and odd positions
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
         if (i % 2 == 0) {
@@ -24,13 +22,10 @@ int main() {
         }
     }
 
-    // Sort both arrays
     qsort(even, evenCount, sizeof(int), compare);
     qsort(odd, oddCount, sizeof(int), compare);
 
-    // Get second largest from even positions
     int secondLargestEven = (evenCount >= 2) ? even[evenCount - 2] : even[0];
-    // Get second smallest from odd positions
     int secondSmallestOdd = (oddCount >= 2) ? odd[1] : odd[0];
 
     int sum = secondLargestEven + secondSmallestOdd;
