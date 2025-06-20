@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+
+    int group[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &group[i]);
+    }
+
+    int buses = 1;
+    int current_load = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (current_load + group[i] <= m) {
+            current_load += group[i];
+        } else {
+            buses++;
+            current_load = group[i];
+        }
+    }
+
+    printf("%d\n", buses);
+    return 0;
+}
