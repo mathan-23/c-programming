@@ -7,7 +7,6 @@ int main() {
     int len = strlen(str);
     char matrix[len][len];
 
-    // Initialize matrix with spaces
     for (int i = 0; i < len; i++)
         for (int j = 0; j < len; j++)
             matrix[i][j] = ' ';
@@ -34,7 +33,6 @@ int main() {
         left++;
     }
 
-    // Print the matrix
     for (int i = 0; i < len; i++) {
         for (int j = 0; j < len; j++)
             printf("%c", matrix[i][j]);
