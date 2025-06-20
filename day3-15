@@ -1,4 +1,3 @@
-Best Leader
 #include <stdio.h>
 
 int main() {
@@ -8,12 +7,10 @@ int main() {
     int arr[n], best[n];
     int count = 0;
 
-    // Read scores
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Traverse from right and collect all best leaders
     int currentMax = arr[n - 1];
     best[count++] = currentMax;
 
@@ -24,7 +21,6 @@ int main() {
         }
     }
 
-    // Print leaders in reverse (to maintain left-to-right output)
     printf("The Best Leaders are");
     for (int i = 0; i < count; i++) {
         printf(" %d", best[i]);
