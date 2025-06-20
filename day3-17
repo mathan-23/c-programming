@@ -3,8 +3,7 @@
 int main() {
     int rows, cols, count = 0;
     scanf("%d", &rows);
-    cols = rows; // Assuming square matrix as per sample input
-
+    cols = rows;
     int matrix[rows][cols];
 
     // Reading matrix elements
