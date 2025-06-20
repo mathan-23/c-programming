@@ -1,9 +1,8 @@
-Richest Customer Wealth
 #include <stdio.h>
 
 int main() {
     int m, n;
-    scanf("%d %d", &m, &n);  // m = number of customers, n = number of banks
+    scanf("%d %d", &m, &n); 
 
     int wealth, maxWealth = 0;
 
