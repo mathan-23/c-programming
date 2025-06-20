@@ -1,0 +1,39 @@
+Find K Largest Elements
+#include <stdio.h>
+#include <stdlib.h>
+
+// Comparison function for qsort (ascending order)
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+int main() {
+    int n, k;
+    scanf("%d", &n);  // Read array size
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);  // Read array elements
+    }
+
+    scanf("%d", &k);  // Read k value
+
+    // Sort array in ascending order
+    qsort(arr, n, sizeof(int), compare);
+
+    // Print sorted array
+    printf("The elements are in the order:");
+    for (int i = 0; i < n; i++) {
+        printf(" %d", arr[i]);
+    }
+    printf("\n");
+
+    // Print Kth value and k largest elements
+    printf("The Kth value is %d and Largest elements are", k);
+    for (int i = n - 1; i >= n - k; i--) {
+        printf(" %d", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
