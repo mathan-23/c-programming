@@ -1,4 +1,4 @@
-Maximum Product Of Two Elements In An Array 1
+
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main() {
     int arr[n];
     int max1 = 0, max2 = 0;
 
-    // Read input and find two largest numbers
+    
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
 
